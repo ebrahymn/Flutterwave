@@ -34,6 +34,9 @@ body{
 .list-itemm{
     display: flex !important;
 }
+.menuBar{
+    display: none;
+}
 /* this is the section for the dropdown link styles */
 .list-itemm div{
     position: relative;
@@ -586,6 +589,10 @@ footer a{
     .sign-in{
         display: none;
     }
+    .menuBar{
+        display: block;
+        font-size: 2em;
+    }
     .global-reach-globe{
         flex-direction: column;
         justify-content: flex-start;
@@ -687,6 +694,10 @@ footer a{
     }
 }
 @media screen and (max-width: 767px) {
+    .menuBar{
+        display: block;
+        font-size: 2em;
+    }
     .list-itemm{
         display: none !important;
     }
