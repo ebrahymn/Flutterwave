@@ -1,0 +1,947 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --link-color: #262c55;
+    --link-bg1: #eee;
+    --link-bg2: #0a0e27;
+    --text-color: #1d1d1d;
+    --big-texColor: #fb9129;
+    --business-color: #35a162;
+    --sub-bg: #f8fafd;
+}
+@font-face {
+    font-family: Millik;
+    src: url(Millik\ Regular.otf);
+    font-weight: bold;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.top-nav{
+    gap: 4em;
+    align-items: center;
+    padding: 0 9%;
+}
+.top-nav .logo{
+    font-family: Millik, sans-serif;
+    font-size: 16px;
+}
+.list-itemm{
+    display: flex !important;
+}
+/* this is the section for the dropdown link styles */
+.list-itemm div{
+    position: relative;
+}
+.dropDown-Content{
+    position: absolute !important;
+    border-radius: 8px;
+    opacity: 0;
+    z-index: 100000000;
+    transform: scale(0, 0);
+    transition: all 0.2s ease-in-out;
+}
+.Enterprise-drop .dropDown-Content{
+    top: 30px;
+    left: 0;
+    width: 50vw;
+}
+.Enterprise-drop:hover .dropDown-Content{
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+.sme-drop .dropDown-Content{
+    top: 30px;
+    left: -200px;
+    width: 70vw;
+}
+.sme-drop:hover .dropDown-Content{
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+.personal-drop .dropDown-Content{
+    top: 30px;
+    left: -20px;
+    width: 20vw;
+}
+.personal-drop:hover .dropDown-Content{
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+.dropDown-Content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.dropDown-Content ul li{
+    display: block;
+    padding: 10px;
+}
+.resources-drop .dropDown-Content{
+    top: 30px;
+    left: -20px;
+    width: 20vw;
+}
+.resources-drop:hover .dropDown-Content{
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+ .paragraph p:hover{
+    cursor: pointer;
+    transition: all 0.2s ;
+    border-radius: 8px;
+    background-color: #c0bfbf;
+ }
+.list-itemm li{
+    list-style-type: none;
+    display: inline-block;
+}
+.list-itemm li a{
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 15px;
+    padding: 0 12px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.sign-in{
+    background-color: var(--link-bg1);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 12px 50px;
+    border-radius: 8px;
+}
+.sign-in:hover{
+    background-color: var(--link-bg2);
+    color: #fff;
+    transition: all 0.3s;
+}
+.showcase{
+    padding: 4% 9%;
+}
+.showcase h1{
+    font-size: 6em;
+    font-family: Millik, sans-serif;
+    color: black;
+    width: 50%;
+}
+.showcase p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.colored{
+    color: var(--big-texColor);
+}
+.contact-btn{
+    background-color: var(--link-bg1);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+.acct-btn{
+    background-color: var(--link-bg2);
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.clothes{
+    position: relative;
+}
+.side-2{
+    position: relative;
+    transform: translateY(-27%);
+}
+.side-2 .bottom{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 2em;
+    max-width: 70%;
+}
+.first-sidepic{
+    height: 70%;
+}
+.second-sidepic{
+    height: 100%;
+}
+.trusted{
+    margin-top: -10%;
+    padding: 0 9%;
+}
+.trusted-logo img{
+    width: 80%;
+    margin-top: 40px;
+}
+.endless-pay {
+    padding: 9% 9%;
+    margin-top: 9%;
+}
+.endless-pay h1{
+    font-size: 4em;
+    font-family: Millik, sans-serif;
+    color: black;
+    width: 50%;
+}
+.endless-pay h4{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.endless-pay p{
+    line-height: 2rem;
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.endless-pay a{
+    color: #fb9129;
+    text-decoration: none;
+}
+.get-started{
+    background-color: var(--link-bg2);
+    text-decoration: none;
+    color: #fff !important;
+    padding: 15px;
+    border-radius: 8px;
+}
+.top2{
+    margin-bottom: 40%;
+}
+.checkout-img{
+    width: 90%;
+    box-shadow: 0px 0px 50px 5px rgb(219, 218, 218);
+}
+main{
+    background-color: var(--sub-bg);
+}
+.small-business{
+    padding: 8% 9%;
+}
+.small-business h1{
+    font-size: 4.5em;
+    font-family: Millik, sans-serif;
+    color: black;
+    width: 90%;
+}
+
+
+.colored-green{
+    color: var(--business-color);
+}
+
+.store h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.store p{
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.store-div{
+    padding: 6% 8%;
+}
+.store-img{
+    width: 120%;
+    height: 100%;
+}
+.creator{
+    transform: translateY(-25%)
+}
+.creator-img{
+    width: 100%;
+}
+.creator p{
+    text-align: center;
+    margin-top: 20px;
+}
+.creator-section{
+    gap: 5em;
+}
+
+.side-3 p{
+    width: 70%;
+}
+.letsPlay{
+    padding: 0 9% 8%;
+}
+.letPlay-text{
+    font-size: 4.5em;
+    margin-bottom: 1.3em;
+}
+.letPlay-link{
+    text-decoration: none;
+    background-color: var(--link-bg2);
+    color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.endless-payment{
+    background-color: var(--text-color);
+    padding: 5% 8%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.endless-payment h1{
+    width: 50%;
+    text-align: center;
+    font-family: Millik, sans-serif;
+    font-size: 4em;
+    margin-bottom: 0.6em;
+}
+.endless-payment > p{
+    width: 50%;
+    font-size: 1.2em;
+    text-align: center;
+}
+.colored-pink{
+    color: #f1a5c2;
+}
+.endless-payment-card{
+    gap: 2em;
+    width: 100%;
+    position: relative;
+    height: 300px;
+    margin-top: 40px;
+}
+.endless-payment-card div{
+    width: 43vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #313131;
+    background-size: cover;
+    height: 100%;
+    border-radius: 25px;
+    /* flex: 0 1 auto; */
+    overflow: hidden;
+    text-align: left;
+    padding: 2.5em;
+    transition: transform .8s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0px 25px 50px rgba(0,0,0,.8);
+}
+.endless-payment-card div h5{
+    margin-bottom: 20px;
+}
+.endless-payment-card div p{
+    width: 90%;
+    font-size: 14px;
+}
+.endless-payment-card div::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background: url(./asset/box-bg.png) center center no-repeat;
+    background-size: cover;
+}
+.endless-payment-card a{
+    color: white;
+}
+.endless-payment-card div:nth-child(2){
+    transform: translateX(50%);
+}
+.endless-payment-card div:last-child{
+    transform: translateX(100%);
+    z-index: 3;
+}
+.developerApi{
+    padding: 7% 8%;
+    background-color: var(--sub-bg);
+}
+.developerApi h1{
+    font-family: Millik, sans-serif;
+    font-size: 4.5em;
+    width: 70%;
+    margin-bottom: 40px;
+}
+.developerApi p{
+    width: 50%;
+    font-size: 20px;
+}
+.developerApi ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+}
+.developerApi ul li{
+    display: flex;
+    gap: 1em;
+    padding: 10px 0;
+}
+.listCircle{
+    width: 20px;
+    height: 15px;
+    background-color: var(--link-bg2);
+    border-radius: 50%;
+}
+.apiLink{
+    background-color: var(--link-bg2);
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.mapSide{
+    gap: 3em 2em;
+}
+.leftLine{
+    width: 2px;
+    height: 25px;
+    background-color: var(--link-bg2);
+    margin-right: 10%;
+    position: relative;
+}
+.leftLine::before{
+    content: '';
+    height: 300%;
+    /* width: 2px; */
+    border-left: 2px dotted #313131;
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+.global-reach{
+    padding: 8%;
+    width: 100%;
+}
+.global-reach ul{
+    padding: 0;
+    list-style: none;
+}
+.global-reach h1{
+    font-family: Millik, sans-serif;
+    font-size: 4em;
+    margin-bottom: 6%;
+}
+.colored-blue{
+    color: #6672c7;
+}
+
+.mapBox{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: linear-gradient(#262c55, #262c55);
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+.mapBox img{
+    animation: globe 20s infinite linear;
+    width: 300%;
+    position: relative;
+}
+.mapBox img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+    z-index: 1000000000;
+    position: absolute;
+}
+.getStarted{
+    padding: 10%;
+}
+.getStartedBox{
+    border-radius: 30px;
+    padding: 10%;
+    color: white;
+    margin: auto;
+    background-color: #1d1d1d;
+    box-shadow: 0px 25px 50px rgba(29, 29, 29, .5);
+}
+.getStartedBox h1{
+    font-size: 3.5em;
+    font-family: Millik, sans-serif;
+    margin-bottom: 40px;
+}
+.getStartedBox p{
+    font-size: 20px;
+    margin-bottom: 2.5em;
+}
+.getStartedBox a:first-child{
+    background-color: var(--link-bg1);
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+.getStartedLink{
+    background-color: var(--link-bg1);
+    text-decoration: none;
+    color: var(--text-color) !important;
+    padding: 25px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.getStartedBox a{
+    text-decoration: none;
+    color: white;
+}
+.getStartedBox a:hover i{
+    margin-left: 10px;
+    transition: all 0.3s linear;
+}
+footer{
+    padding: 5% 8% 0;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    padding: 10px 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes globe {
+    0%{
+        transform: translateX(0%);
+    }
+    
+    100%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateX(-30%);
+    }
+    0%{
+        transform: translateX(-10%);
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1031px) {
+    .list-itemm li a{
+        font-size: 13px;
+    }
+    .mapBox{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: linear-gradient(#262c55, #262c55);
+        overflow: hidden;
+        transition: all 0.2s linear;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .endless-pay{
+        padding: 9% 5%;
+    }
+    .top-nav{
+        padding: 0 5%;
+        gap: 2em;
+    }
+    .list-itemm li a{
+        padding: 0 8px;
+        /* font-size: 12px; */
+    }
+    .showcase{
+        padding: 4% 5%;
+    }
+    .trusted{
+        padding: 0 5%;
+    }
+    .small-business{
+        padding: 8% 5%;
+    }
+    .letsPlay{
+        padding: 0 5% 4%;
+    }
+    .developerApi{
+        padding: 7% 5%;
+    }
+    .global-reach{
+        padding: 5%;
+    }
+    footer{
+        padding: 5% 5% 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .list-itemm{
+        display: none !important;
+    }
+    .sign-in{
+        display: none;
+    }
+    .global-reach-globe{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+    }
+    .getStartedBox h1{
+        font-size: 2.5em;
+        font-family: Millik, sans-serif;
+        margin-bottom: 40px;
+    }
+    .getStartedBox p{
+        font-size: 14px;
+    }
+    .developerApi h1{
+        font-size: 4em;
+        width: 100%;
+    }
+    .developerApi p{
+        width: 100%;
+    }
+    .store-div{
+        padding: 6% 5%;
+    }
+    .store-img{
+        width: 100%;
+        height: 100%;
+    }
+    .creator{
+        transform: translateY(0)
+    }
+    .creator-img{
+        width: 100%;
+    }
+    .creator p{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .creator-section{
+        gap: 5em;
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .endless-pay{
+        padding: 9% 5%;
+    }
+    .small-business{
+        padding: 8% 5%;
+    }
+    .letsPlay{
+        padding: 0 5% 4%;
+    }
+    .letPlay-text{
+        font-size: 2.5em;
+        margin-bottom: 1.3em;
+    }
+    .trusted{
+        padding: 0 5%;
+    }
+    .top-nav{
+        padding: 0 5%;
+    }
+    .showcase h1{
+        font-size: 4em;
+        font-family: Millik, sans-serif;
+        color: black;
+        width: 50%;
+    }
+    .side-2{
+        position: relative;
+        transform: translateY(-22%);
+    }
+    .side-2 .bottom{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 2em;
+        max-width: 100%;
+    }
+    .endless-pay h1{
+        font-size: 3em;
+        width: 80%;
+    }
+    .checkout-img{
+        width: 50%;
+    }
+    .top2{
+        margin-bottom: 10%;
+    }
+    .showcase{
+        padding: 4% 5%;
+    }
+    .developerApi{
+        padding: 7% 5%;
+    }
+    .global-reach{
+        padding: 5%;
+    }
+    footer{
+        padding: 5% 5% 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .list-itemm{
+        display: none !important;
+    }
+    .small-business{
+        padding: 8% 5%;
+    }
+    .endless-pay{
+        padding: 9% 5%;
+    }
+    .letsPlay{
+        padding: 0 5% 6%;
+    }
+    .letPlay-text{
+        font-size: 2em;
+        margin-bottom: 1.3em;
+    }
+    .trusted{
+        padding: 0 5%;
+    }
+    .top-nav{
+        padding: 0 5%;
+    }
+    .showcase{
+        padding: 4% 5%;
+    }
+    .showcase p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .side-3{
+        margin-left: 0;
+    }
+    .side-3 p{
+        width: 100%;
+    }
+    .creator-section{
+        flex-direction: column-reverse;
+    }
+    .creator{
+        transform: translateY(0);
+        margin-top: 30px;
+    }
+    .creator-img{
+        width: 100%;
+    }
+    .small-business h1{
+        font-size: 2em;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .store p{
+        width: 100%;
+    }
+    .store-div{
+        padding: 0;
+    }
+    .store-img{
+        width: 100%;
+    }
+    .sign-in{
+        display: none;
+    }
+    .top2{
+        margin-bottom: 10%;
+    }
+    .checkout-img{
+        width: 50%;
+    }
+    .trusted{
+        margin-top: 20px;
+    }
+    .trusted h3{
+        font-size: 1.2em;
+    }
+    .trusted-logo img{
+        width: 80%;
+    }
+    .trusted-logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .clothe-grid{
+        gap: 1.5em;
+        margin: auto;
+    }
+    .side-2 .bottom{
+        max-width: 100%;
+    }
+    .side-2{
+        transform: translateY(0);
+        flex-direction: column-reverse !important;
+    }
+    .first-sidepic{
+        height: auto;
+    }
+    .showcase h1{
+        font-size: 3em;
+        width: 100%;
+    }
+    .endless-pay h1{
+        font-size: 3em;
+        width: 80%;
+    }
+    .developerApi{
+        padding: 7% 5%;
+    }
+    .developerApi h1{
+        font-size: 2.5em;
+        width: 100%;
+    }
+    .developerApi p{
+        width: 100%;
+    }
+    .global-reach{
+        padding: 5%;
+    }
+    footer{
+        padding: 5% 5% 0;
+    }
+    .endless-payment h1{
+        width: 100%;
+        font-size: 3em;
+    }
+    .endless-payment > p{
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .endless-payment-card{
+        width: 100%;
+        position: relative;
+        height: auto !important;
+        margin-top: 40px;
+    }
+    .endless-payment-card div{
+        width: 100%;
+        position: static !important;
+        background: #313131;
+        background-size: cover;
+        height: 300px;
+        border-radius: 25px;
+        overflow: hidden;
+        text-align: left;
+        padding: 2.5em;
+        transition: transform .8s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0px 25px 50px rgba(0,0,0,.8);
+        margin-bottom: 20px;
+    }
+    .endless-payment-card div:nth-child(2){
+        transform: translateX(0) !important;
+    }
+    .endless-payment-card div:last-child{
+        transform: translateX(0) !important;
+        z-index: 3;
+    }
+    .global-reach-globe{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+    }
+    .mapBox{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: linear-gradient(#262c55, #262c55);
+        overflow: hidden;
+        transition: all 0.2s linear;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mapBox{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .developerApi h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    .global-reach h1{   
+        font-size: 2em;
+    }
+    .letsPlay{
+        margin-bottom: 40px;
+    }
+    .letPlay-text{
+        font-size: 1em;
+        text-align: justify;
+        margin-bottom: 2em;
+    }
+    .endless-payment h1{
+        font-size: 1.5em;
+    }
+    .endless-payment > p{
+        font-size: 14px;
+    }
+    .endless-payment-card div p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .endless-pay h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    .contact-btn{
+        background-color: var(--link-bg1);
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 25px;
+        border-radius: 8px;
+        display: inline-block;
+    }
+    .acct-btn{
+        background-color: var(--link-bg2);
+        text-decoration: none;
+        color: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        margin-right: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .getStartedBox h1{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .getStartedBox p{
+        font-size: 12px;
+        margin-bottom: 2.5em;
+    }
+    .getStartedBox a:first-child{
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .getStartedLink{
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .footer-social{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .footer-social ul li{
+        display: block !important;
+    }
+    .footer-terms{
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1em;
+    }
+    .list-itemm{
+        display: none !important;
+    }
+    .sign-in{
+        display: none;
+    }
+}
